@@ -28,7 +28,7 @@ func (b *BuscadorGit) BuscaGitTag(tag string) {
 	fmt.Printf("%s %s %s\n", tag, b.DonoDoRepositorio, b.Repo)
 
 	url := fmt.Sprintf("https://api.github.com/repos/%s/%s", b.DonoDoRepositorio, b.Repo)
-	// Go não tem exceção!!!
+
 	resp, err := http.Get(url)
 	if err != nil {
 		fmt.Println(err)
