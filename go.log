@@ -1,0 +1,3 @@
+module github.com/OSX-RSPlug-a/linuxtips-golang-week-d01
+
+go 1.19
